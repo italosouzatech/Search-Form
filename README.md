@@ -1,4 +1,4 @@
-# Search Form
+Search Form
 
 Formulário de busca desenvolvido utilizando apenas HTML5, com foco em semântica, organização e validação nativa.
 
@@ -25,6 +25,3 @@ Como executar
 
 Versão
 v1.1
-
-## 📄 Licença
-MIT
