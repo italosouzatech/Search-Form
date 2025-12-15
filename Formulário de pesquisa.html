@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <head>
+       <title>Search Form</title>
+       <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div id="container">
+      <h1 id="title">HavenTech</h1>
+      <p id="description">Newsletter Form HavenTech</p>
+       <form id="survey-form">
+         How did you hear about our company?<select id="dropdown">
+           <option value="1" name="one">Select one</option>
+           <option value="2" name="two">Google</option>
+           <option value="3" name="three">Instagram</option>
+           <option value="4" name="four">Technology forums</option>
+           <option>Others</option>
+         </select>
+         <fieldset>
+           <label id="name-label">Enter your name</label>
+         <input name="name" required id="name" type="text" name="search-form" placeholder="Bob..."></fieldset>
+         <fieldset>
+           <label id="email-label"> Enter your email</label>
+         <input name="email" required id="email" type="email" placeholder="yourname@jjjmail.com"></fieldset>
+         <fieldset>
+           <label id="number-label"> Enter your number</label>
+         <input name="number" required id="number" type="number" min="5" max="18" placeholder="+99 99-999"></fieldset>
+         <fieldset>
+           <p>Would you recommend HavenTech to a friend?</p>
+           <label id="definitely">
+             <input type="checkbox" name="prefer" value="definitely" class="inline">Definitely
+             </label>
+             <label id="maybe">
+               <input type="checkbox" name="prefer" value="maybe" class="inline">Maybe
+               </label>
+             <label id="not sure">
+               <input type="checkbox" name="prefer" value="not-sure" class="inline">Not sure
+               </label>
+         </fieldset>
+         <fieldset>
+           <p>What information would you like to receive?</p>
+           <label id="promotions-label"><input id="promotions" name="promotions" type="radio" value="Promotions" class="inline" id="promotions">Promotions</label>
+           <label><input type="radio" id="website-updates" name="promotions" class="inline" value="Website updates">Website updates</label>
+           <label>
+             <p>Any comments or suggestions?</p>
+             <textarea name="suggestions" rows="5" cols="60" placeholder="I think it could be improved..." ></textarea>
+             </label>
+         </fieldset>
+         <input id="submit" type="submit" value="Submit Newsletter">
+       </form>
+    </body>
+</html>
