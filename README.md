@@ -1,15 +1,14 @@
 Search Form
 
-Formulário de busca desenvolvido utilizando apenas HTML5, com foco em semântica, organização e validação nativa.
+Formulário de busca desenvolvido utilizando apenas HTML5, inicialmente usando conhecimentos básicos sem semântica e polimento.
 
 Objetivo
-Demonstrar boas práticas de estrutura HTML, uso correto de formulários e validação nativa sem JavaScript.
+Demonstrar práticas de iniciante para evolução. (não se deve esperar uma boa estrutura, apenas meu primeiro código sendo publicado no github).
 
 Funcionalidades
-- Estrutura semântica em HTML5
-- Validação nativa de campos
-- Uso correto de `label`, `input` e `fieldset`
-- Código limpo e organizado
+- Estrutura em HTML5
+- Uso de `label`, `input` e `fieldset`
+- Código inicial não corrigido nem validado
 
 Tecnologias utilizadas
 - HTML5
@@ -23,4 +22,4 @@ Como executar
 2. Abra o arquivo `Formulário de pesquisa.html` no navegador  
 
 Versão
-v1.
+v1.0
