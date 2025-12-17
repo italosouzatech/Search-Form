@@ -24,8 +24,8 @@
   <!--fieldset one-->
     <fieldset>
       <legend>Como ficou sabendo da HavenTech?</legend>
-        <label for="dropdown">
-          <select id="dropdown">
+        <label for="dropdown">Fonte:
+          <select id="dropdown" name="source" required>
             <option value="1" id="one">Selecione</option>
             <option value="2" id="two">Google</option>
             <option value="3" id="three">Instagram</option>
@@ -37,29 +37,26 @@
 
   <!--fieldset two-->
     <fieldset>
-      <legend>Insira seu nome</legend>
-        <label for="your-name"></label>
+      <legend>Dados Pessoais</legend>
+  <!--Nome-->
+        <label for="your-name">Nome:</label>
           <input name="your-name" id="your-name" type="text" 
           placeholder="José..." required>
+  <!--Email-->
+        <label for="email">Email:</label>
+          <input name="email-label" id="email" type="email" 
+          placeholder="seunome@jjjmail.com" minlength="6" maxlength="36" required>
+  <!--Telefone-->
+        <label for="telefone">Telefone:</label>
+          <input name="tel" id="telefone" type="tel" 
+          placeholder="11999999999" inputmode="numeric" pattern="[0-9]{10,11}" required>
+  <!--Idade-->
+        <label for="idade">Idade:</label>
+          <input name="idade" id="idade" type="number" 
+          placeholder="25" min="1" max="120" required>
     </fieldset>
 
   <!--fieldset three-->
-    <fieldset>
-      <legend>Insira seu email</legend>
-        <label for="email"></label>
-          <input name="email-label" id="email" type="email" 
-          placeholder="seunome@jjjmail.com" minlength="6" maxlength="36" required>
-    </fieldset>
-
-  <!--fieldset four-->
-    <fieldset>
-      <legend>Insira seu telefone</legend>
-        <label for="telefone"></label>
-          <input name="tel" id="telefone" type="tel" 
-          placeholder="11999999999" inputmode="numeric" pattern="[0-9]{10,11}" required>
-    </fieldset>
-
-  <!--fieldset five-->
     <fieldset>
       <legend>Você recomendaria a HavenTech?</legend>
   <!--Definitivamente-->
@@ -73,32 +70,38 @@
           <input name="recom" id="nunca" type="radio" value="nca" class="inline">Nunca
     </fieldset>
 
-  <!--fieldset six-->
+  <!--fieldset four-->
     <fieldset>
-      <legend>Avalie a HavenTech de 1-5 estrelas⭐</legend>
+      <legend>Avaliação</legend>
         <div class="rating">
   <!--1 estrela-->
-        <label for="1-estrela"></label>
-          <input name="estrelas" id="1-estrela" type="radio" value="1" class="inline">⭐
+        <label>
+          <input name="estrelas" type="radio" value="1" class="inline">⭐
+        </label>
   <!--2 estrelas-->
-        <label for="2-estrelas"></label>
-          <input name="estrelas" id="2-estrelas" type="radio" value="2" class="inline">⭐⭐
+        <label>
+          <input name="estrelas" type="radio" value="2" class="inline">⭐⭐
+        </label>
   <!--3 estrelas-->
-        <label for="3-estrelas"></label>
-          <input name="estrelas" id="3-estrelas" type="radio" value="3" class="inline">⭐⭐⭐
+        <label>
+          <input name="estrelas" type="radio" value="3" class="inline">⭐⭐⭐
+        </label>
   <!--4 estrelas-->
-        <label for="4-estrelas"></label>
-          <input name="estrelas" id="4-estrelas" type="radio" value="4" class="inline">⭐⭐⭐⭐
+        <label>
+          <input name="estrelas" type="radio" value="4" class="inline">⭐⭐⭐⭐
+        </label>
   <!--5 estrelas-->
-        <label for="5-estrelas"></label>
-          <input name="estrelas" id="5-estrelas" type="radio" value="5" class="inline">⭐⭐⭐⭐⭐
+        <label>
+          <input name="estrelas" type="radio" value="5" class="inline">⭐⭐⭐⭐⭐
+        </label>
         </div>
     </fieldset>
-  <!--fieldset seven-->
+
+  <!--fieldset five-->
     <fieldset>
-      <legend>Comentários ou sugestões?</legend>
-        <label for="sugestões"></label>
-        <textarea name="sugestões" id="sugestões" rows="2" cols="30" placeholder="Simplesmente excelente..." ></textarea>
+      <legend>Feedback</legend>
+        <label for="sugestões">Sugestões</label>
+        <textarea name="sugestões" id="sugestões" rows="12" cols="12" placeholder="Simplesmente excelente..." ></textarea>
     </fieldset>
 
   <!--submit button-->
